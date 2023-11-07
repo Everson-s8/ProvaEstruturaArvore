@@ -12,14 +12,19 @@ public class Main {
         arvore.inserirNo(7);
         arvore.inserirNo(60);
         arvore.inserirNo(3);
+        arvore.inserirNo(5);
+        arvore.remover(new No(4));
+        arvore.inserirNo(4);
+        arvore.remover(new No(4));
+        arvore.inserirNo(4);
+        arvore.remover(new No(1));
+        arvore.remover(new No(38));
+        arvore.remover(new No(7));
+        arvore.inserirNo(58);
         arvore.remover(new No(60));
-        System.out.println(arvore.buscar(new No(60)));
 
-        // faltou fazer exceção se o número não existir
-        // faltou fazer exceção se for tentar remover com a arvore vazia retornar um erro.
-        // fazer um pecorrer por nv de acordo com outros no além da raiz
 
-//        arvore.imprimir("preOrdem");
+        arvore.imprimir("preOrdem");
 
     }
 }
